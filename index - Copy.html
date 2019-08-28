@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="./style.css">
+  <link rel="stylesheet" type="text/css" href="../css/popup.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="../css/tiles.css">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="../javascript/popup.js"></script>
+  <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+  <style>
+    @font-face{font-family:'Artifakt';font-style:normal;font-weight:300;src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Light.eot");src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Light.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF2/Artifakt Element Light.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF/Artifakt Element Light.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktElement/TTF/Artifakt Element Light.ttf") format("truetype")}
+    @font-face{font-family:'Artifakt';font-style:normal;font-weight:400;src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Regular.eot");src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Regular.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF2/Artifakt Element Regular.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF/Artifakt Element Regular.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktElement/TTF/Artifakt Element Regular.ttf") format("truetype")}
+    @font-face{font-family:'Artifakt';font-style:normal;font-weight:700;src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Medium.eot");src:url("https://fonts.autodesk.com/ArtifaktElement/EOT/Artifakt Element Medium.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF2/Artifakt Element Medium.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktElement/WOFF/Artifakt Element Medium.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktElement/TTF/Artifakt Element Medium.ttf") format("truetype")}
+    @font-face{font-family:'Artifakt Legend';font-weight:300;src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Light.eot");src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Light.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF2/Artifakt Legend Light.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF/Artifakt Legend Light.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktLegend/TTF/Artifakt Legend Light.ttf") format("truetype")}
+    @font-face{font-family:'Artifakt Legend';font-weight:400;src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Regular.eot");src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Regular.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF2/Artifakt Legend Regular.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF/Artifakt Legend Regular.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktLegend/TTF/Artifakt Legend Regular.ttf") format("truetype")}
+    @font-face{font-family:'Artifakt Legend';font-weight:700;src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Medium.eot");src:url("https://fonts.autodesk.com/ArtifaktLegend/EOT/Artifakt Legend Medium.eot?#iefix") format("embedded-opentype"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF2/Artifakt Legend Medium.woff2") format("woff2"),url("https://fonts.autodesk.com/ArtifaktLegend/WOFF/Artifakt Legend Medium.woff") format("woff"),url("https://fonts.autodesk.com/ArtifaktLegend/TTF/Artifakt Legend Medium.ttf") format("truetype")}
+  </style>
+</head>
+<body>
+  <div  style="background-color: #F5F5F5;">
+      <div class="container-fluid" style="padding-top: 76px;padding-bottom: 16px;padding-left: 20px;padding-right: 20px">
+        <div id="light">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close();"></a>
+      <video id="VisaChipCardVideo" width="800" controls autoplay style="position: relative;">
+        <source src="http://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autocad/fy20/overview/videos/autocad-mobile-2019-overview-video-1920x1080.mp4" type="video/mp4">
+        <!--Browser does not support <video> tag -->
+      </video>
+    </div>
+    <div id="fade" onClick="lightbox_close();"></div>
+    <div id="light1">
+      <a class="boxclose" id="boxclose" onclick="lightbox_close1();"></a>
+      <video id="VisaChipCardVideo" width="800" controls autoplay style="position: relative;">
+          <source src="https://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autocad/fy20/overview/videos/autocad-web-app-video-v2-1920x1080.mp4" type="video/mp4">
+          <!--Browser does not support <video> tag -->
+        </video>
+    </div>
+    <div id="fade1" onClick="lightbox_close1();"></div>
+        <!-- <div style="padding-left: 20px;padding-right: 20px;"> -->
+            <div class="row" style="padding-bottom: 76px;padding-left: 20px;padding-right: 20px; ">
+              <div class="col-sm-12 col-md-6" style="padding-right: 30px;padding-left: 10px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;position: relative;">
+                        <video width=100% height=100% style="padding: 0px;">
+                          <source src="https://videos.autodesk.com/zencoder/content/dam/autodesk/www/products/autocad/fy20/overview/videos/autocad-2020-overview-video-v3-1920x1080.mp4" type="video/mp4">
+                          
+                        </video>
+                        <svg class="wd-icon icon-svg-play-solid" style="fill: #fff;position: absolute;top: 32%;left: 38%;width:25%;height: 25%;">
+                          <use xlink:href="#icon-svg-play-solid">
+                            <svg viewBox="0 0 100 100" id="icon-svg-play-solid" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M50 0a50 50 0 1 0 50 50A50.04 50.04 0 0 0 50 0zm20.26 51.72c-.43.43-.86 1.3-1.3 1.3L42.68 70.26a2.6 2.6 0 0 1-1.72.43 2.6 2.6 0 0 1-1.73-.43 2.89 2.89 0 0 1-1.72-3.02V32.76a3.63 3.63 0 0 1 1.72-3.02 4.72 4.72 0 0 1 3.45 0l26.3 17.24a3.47 3.47 0 0 1 1.29 4.74z"></path>
+                            </svg>
+                          </use>
+                        </svg>
+                    </div>
+                    <div style="  margin-top: 9px;">
+                        <p style="color:rgb(102, 102, 102);font-family: Artifakt, sans-serif;font-size:16px;font-weight:400;">What's new in AutoCAD 2020 (2.40 min.)</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6" style="padding-left: 30px;padding-right: : 0px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;">
+                         <div style="margin-top:4px;margin-bottom: 20px;border-bottom: 4px solid rgb(221, 34, 34)">  
+                         <h2  class="card-title" style="margin: 0px;padding-bottom: 16px; color: #444;font-size: 30px;">What's AutoCAD?</h2>
+                          </div>
+                          
+                          <p >AutoCAD® is computer-aided design (CAD) software that architects, engineers, and construction professionals rely on to create precise 2D and 3D drawings</p>
+                          <ul >
+                           <li>Draft and edit 2D geometry and 3D models with solids, surfaces, and mesh objects</li>
+                            <li>Annotate drawings with text, dimensions, leaders, and tables</li>
+                            <li>Customize with add-on apps and APIs</li>
+                          </ul>
+                          <div style="margin-top: 16px"><i class='fas fa-arrow-alt-circle-right' style="font-size:20px;color:red;float:left"></i><span><a href="https://www.autodesk.in/products/autocad/features"><p style="float:left;bottom:5px;margin-top:-1px;margin-left:5px;color: rgb(68, 68, 68);"><strong>See all features</strong></p></a></span> 
+                          </div>
+                          <br>
+                          <div style=" margin-top: 16px;"> <strong>System requirements</strong>
+                              <span>
+                                <a href="https://knowledge.autodesk.com/support/autocad/learn-explore/caas/sfdcarticles/sfdcarticles/System-requirements-for-AutoCAD-2020-including-Specialized-Toolsets.html" data-wat-link="true" data-wat-loc="content" data-wat-val="system requirements: windows" target="_blank" class="wd-no-underline"><i class='fab fa-windows' style="color: #777;"></i></a>
+                                <a href="https://knowledge.autodesk.com/support/autocad/learn-explore/caas/sfdcarticles/sfdcarticles/System-requirements-for-AutoCAD-2020-including-Specialized-Toolsets.html" data-wat-link="true" data-wat-loc="content" data-wat-val="system requirements: mac" target="_blank" class="wd-no-underline"><i class='fab fa-apple' style="color: #777;"></i></a>
+                              </span>
+                          </div>
+                      </div>
+                    
+                    </div>
+                  </div>
+                </div>
+            </div>
+            <div class="row" style="padding-bottom: 76px;padding-left: 20px;padding-right: 20px; ">
+              <div class="col-sm-12 col-md-6" style="padding-right: 30px;padding-left: 0px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;">
+                        
+                         <div style="margin-top:4px;margin-bottom: 20px;border-bottom: 4px solid rgb(221, 34, 34)">  
+                         <h2  style="margin: 0px;padding-bottom: 16px; color: #444;">Work faster with specialized toolsets</h2>
+                          </div>
+                          <p>AutoCAD now includes industry-specific features and intelligent objects for architecture, mechanical engineering, electrical design, and more</p>
+                          <ul>
+                           <li>Automate floor plans, sections, and elevations</li>
+                            <li>Draw piping, ducting, and circuiting quickly with parts libraries</li>
+                            <li>Auto-generate annotations, layers, schedules, lists, and tables</li>
+                            <li>Use a rules-driven workflow to accurately enforce industry standards</li>
+                          </ul>
+                          <i class='fas fa-arrow-alt-circle-right' style="font-size:20px;color:red;float:left"></i><a href="https://www.autodesk.in/products/autocad/included-toolsets"><p style="float:left;bottom:5px;margin-top:-1px;margin-left:5px;color: rgb(68, 68, 68);"><strong>See all included toolsets</strong></p></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-sm-12 col-md-6" style="padding-left: 30px;padding-right: : 0px;padding-left: 0px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;">
+                      <div class="container-fluid">
+                       <div class="row">
+                         <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;border-bottom:1px solid grey">
+                           <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <div style="padding: 0px;">
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets#autocad-toolset">
+                            <svg class="toolset-icon" style="height: 60px;width: 77px;fill: #666;">
+                                    
+                              <use xlink:href="#icon-svg-autocad">&nbsp;
+                                <svg id="icon-svg-autocad" x="0px" y="0px" viewBox="0 0 100 100" style="enable-background:new 0 0 100 100;" xml:space="preserve">
+                                <g><path d="M97.7,12.9H2.3c-1.2,0-2.3,1-2.3,2.3v55.5C0,72,1,73,2.3,73h39v11.6H35v2.5h27.7v-2.5h-6.3V73h41.5c1.2,0,2.3-1,2.3-2.3V15.2C100,13.9,99,12.9,97.7,12.9z M53.8,84.6H43.7V73h10.1C53.8,73,53.8,84.6,53.8,84.6z M95.5,68.5h-91V58.2h1.6v-1.6H4.5V17.4h91V68.5z"></path><rect x="18.2" y="17.7" width="1.6" height="0.8"></rect><rect x="18.2" y="26.3" width="1.6" height="1.5"></rect><rect x="18.2" y="23.2" width="1.6" height="1.5"></rect><rect x="18.2" y="20.1" width="1.6" height="1.5"></rect><rect x="18.2" y="29.3" width="1.6" height="1.5"></rect><rect x="18.2" y="35.5" width="1.6" height="1.5"></rect><rect x="18.2" y="38.6" width="1.6" height="1.5"></rect><rect x="18.2" y="32.4" width="1.6" height="1.5"></rect><rect x="18.2" y="41.7" width="1.6" height="1.6"></rect><rect x="41.7" y="41.7" width="1.7" height="1.6"></rect><rect x="35" y="41.7" width="1.7" height="1.6"></rect><rect x="38.3" y="41.7" width="1.7" height="1.6"></rect><rect x="45.1" y="41.7" width="1.7" height="1.6"></rect><rect x="51.8" y="41.7" width="1.7" height="1.6"></rect><rect x="48.4" y="41.7" width="1.7" height="1.6"></rect><rect x="31.6" y="41.7" width="1.7" height="1.6"></rect><rect x="24.9" y="41.7" width="1.7" height="1.6"></rect><rect x="21.5" y="41.7" width="1.7" height="1.6"></rect><rect x="28.2" y="41.7" width="1.7" height="1.6"></rect><rect x="55.2" y="41.7" width="0.8" height="1.6"></rect><path d="M68,46.1h2.7v9.3h1.6v-9.3H75v-2.7h10v-1.6H75v-2.7h-2.7v-9.3h-1.6v9.3H68v2.7h-9.3v1.6H68V46.1z M69.6,44.5v-1.1h1.1v1.1H69.6z M73.4,44.5h-1.1v-1.1h1.1V44.5z M73.4,40.7v1.1h-1.1v-1.1H73.4z M69.6,40.7h1.1v1.1h-1.1V40.7z"></path><rect x="10.9" y="56.6" width="1.6" height="1.6"></rect><rect x="33.5" y="56.6" width="1.6" height="1.6"></rect><rect x="7.7" y="56.6" width="1.6" height="1.6"></rect><rect x="14.1" y="56.6" width="1.6" height="1.6"></rect><rect x="37" y="62.8" width="1.6" height="1.6"></rect><rect x="37" y="59.6" width="1.6" height="1.6"></rect><rect x="37" y="66" width="1.6" height="1.6"></rect><polygon points="37.8,58 38.6,58 38.6,56.6 36.7,56.6 36.7,58.2 37.8,58.2"></polygon><rect x="27.1" y="56.6" width="1.6" height="1.6"></rect><rect x="30.3" y="56.6" width="1.6" height="1.6"></rect><rect x="23.8" y="56.6" width="1.6" height="1.6"></rect><rect x="20.6" y="56.6" width="1.6" height="1.6"></rect><rect x="17.4" y="56.6" width="1.6" height="1.6"></rect></g></svg>
+                              </use>
+                            </svg>
+
+                           
+                             <p class="card-text">AUTOCAD&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp<br></p>
+                           
+                           </a>
+                          </div>
+                          </div>
+                         </div>
+                       </div>
+
+                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;border-bottom:1px solid grey">
+                             <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-architecture">
+                             <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                             <use xlink:href="#icon-svg-acad-architecture">&nbsp;
+                             <svg id="icon-svg-acad-architecture" x="0px" y="0px" viewBox="0 0 100 71.7" style="enable-background:new 0 0 100 71.7;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><g><path d="M52.9,0.4v1.6H34.4V0.4H0v70.9h100V0.4H52.9z M63.9,66.5H24.2v-7.9h39.7V66.5z M52.9,3.5v1.6h11   v48.7H24.2V38.1h16.9l0.8-0.8c0-8.6-4.8-17.7-17.7-19.4V5.1h10.1V3.5H52.9z M19.5,5.1v13.9h0.2v0.1c12.6,0,20.3,6.5,20.7,17.4H19.6   l-0.2,0.8v16.5H4.8V5.1H19.5z M4.8,58.6h14.7v7.9H4.8V58.6z M95.2,66.5H68.7V39.2H84v5.1h4.8V27.8H84v6.5H68.7V5.1h26.5V66.5z"></path><path d="M73.9,21.4h12.7l0.8-0.8V7.9l-0.8-0.8H73.9l-0.8,0.8v12.7L73.9,21.4z M74.7,8.7h11.1v11.1H74.7V8.7z   "></path><path d="M73.9,49.6l-0.8,0.8v12.7l0.8,0.8h12.7l0.8-0.8V50.4l-0.8-0.8H73.9z M85.8,62.3H74.7V51.2h11.1V62.3z"></path></g>
+                              </svg>
+                            </use>
+                            </svg>
+                            <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >ARCHITECTURE TOOLSET</p>
+                           </div>
+                           </a>
+                          </div>
+                          </div>
+                        </div>
+                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;border-bottom:1px solid grey">
+                            <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-electrical">
+                            <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                              <use xlink:href="#icon-svg-acad-electrical">&nbsp;
+                                <svg id="icon-svg-acad-electrical" x="0px" y="0px" viewBox="0 0 100 81.9" style="enable-background:new 0 0 100 81.9;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><g><path d="M53,47.2L48.8,59c0,0-0.5,1.2-0.2,1.3c0.4,0.2,1.1,0,1.1,0l2.9-0.3l-3.1,11.3c0,0-0.2,0.9,0.3,1.1   c0.7,0.2,1.1-0.7,1.1-0.7l9.2-14.1c0,0,0.6-0.9,0.4-1.2c-0.1-0.2-0.8-0.2-0.8-0.2l-3.4,0.4l4.2-9.5H53z"></path><path d="M100,8.7H83.5l-6.8-8.4l-8.2,9.6l-7-9.8l-7.7,9.8l-7.7-9.8l-6.8,9.6l-6.8-9.6l-6.7,8.7H9.1v12.7h4.4   v-8.3h14.4l4.4-5.7l7,9.8l7-9.8l7.5,9.6l7.5-9.6l6.8,9.6l8.4-9.8l4.8,5.9h14.2v45.2H77.2C76.8,46,66.7,36.1,54.3,36.1   S31.8,46,31.4,58.3h-18V42.4h8.7L11.3,23L0,42.4h9.1v20.4h22.7c1.8,10.9,11.2,19.2,22.6,19.2s20.8-8.3,22.6-19.2H100V8.7z    M54.3,77.5c-10.2,0-18.5-8.3-18.5-18.5c0-10.2,8.3-18.5,18.5-18.5S72.8,48.9,72.8,59C72.8,69.2,64.5,77.5,54.3,77.5z"></path></g>
+                                </svg>
+                              </use>
+                            </svg>
+                            <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >ELECTRIC TOOLSET</p>
+                           </div>
+                           </a>
+                          </div>
+                        </div>
+                      </div>
+                          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-bottom: 1px solid grey;">
+                            <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-mechanical">
+                            <svg class="toolset-icon icon-small"  style="height: 48px;width: 62px;fill: #666;">
+                              <use xlink:href="#icon-svg-acad-mechanical">&nbsp;
+                                <svg id="icon-svg-acad-mechanical" x="0px" y="0px" viewBox="0 0 100 77.8" style="enable-background:new 0 0 100 77.8;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><g><path d="M25.8,44.3c-1.1,0.1-2.2-0.5-2.7-1.5l-1.5-3l-1.8-0.2l-2,2.8c-0.3,0.5-0.8,0.9-1.4,1.1   c-0.2,0.1-0.5,0.1-0.7,0.1c-0.5,0-1-0.1-1.4-0.3l-4.4-2.2c-1.3-0.6-1.9-2.1-1.4-3.4l1.1-3.2l-1.1-1.3l-3.5,0.6c-0.1,0-0.2,0-0.3,0   c-1.3,0.1-2.5-0.7-2.9-1.9l-1.6-4.7c-0.5-1.3,0.2-2.8,1.4-3.4l3-1.5l0.3-2L2,18.4c-1.1-0.8-1.6-2.3-0.9-3.5l2.2-4.4   c0.3-0.7,0.9-1.2,1.6-1.4C5,9,5.3,8.9,5.5,8.9c0.4,0,0.7,0,1.1,0.1l3.2,1.1L11.2,9l0.1-0.1l-0.7-3.4c-0.3-1.4,0.5-2.7,1.8-3.2   l4.7-1.6c0.2-0.1,0.5-0.1,0.7-0.1c1.1-0.1,2.2,0.5,2.7,1.5l1.5,3l1.9,0.2l2-2.8c0.3-0.5,0.8-0.9,1.4-1.1c0.2-0.1,0.5-0.1,0.7-0.1   c0.5,0,1,0.1,1.4,0.3l4.4,2.2c1.2,0.6,1.8,2.1,1.4,3.4l-1,3.1l1.1,1.4l3.4-0.5c0.1,0,0.2,0,0.3,0c1.3-0.1,2.5,0.7,2.9,1.9l1.6,4.6   c0.5,1.3-0.1,2.8-1.4,3.4l-3,1.5l-0.2,1.9l2.8,2c1.1,0.8,1.5,2.3,0.9,3.6l-2.2,4.4c-0.3,0.7-0.9,1.2-1.6,1.4   C38.6,36,38.4,36,38.1,36c-0.4,0-0.7,0-1.1-0.1l-3.2-1.1L32.5,36l0.6,3.4c0.3,1.4-0.5,2.7-1.8,3.2l-4.7,1.6   C26.3,44.2,26,44.3,25.8,44.3z M23.9,36.4l2,4.3l3.6-1.2l-1-4.9l4.5-3.8l4.5,1.6l1.7-3.4l-4-2.7l0.4-6l4.3-2.1l-1.2-3.6L34,15.7   l-3.8-4.5l1.6-4.6l-3.4-1.7l-2.7,4l-6-0.4l-2-4.3l-3.6,1.2l1,4.8l-4.5,3.9L6,12.5l-1.7,3.4l4.1,2.8l-0.5,5.9l-4.4,2l1.2,3.6l5-1   l3.7,4.4l-1.6,4.6l3.4,1.7L18,36L23.9,36.4z"></path><path d="M22.5,31.7c-4.2,0.3-8.1-2.3-9.4-6.3c-0.8-2.3-0.6-4.8,0.5-7c1.1-2.2,3-3.9,5.3-4.6   c0.7-0.2,1.5-0.4,2.3-0.5c4.2-0.3,8.1,2.3,9.4,6.3c0.8,2.3,0.6,4.8-0.5,7c-1.1,2.2-3,3.9-5.3,4.6C24,31.5,23.3,31.6,22.5,31.7   L22.5,31.7z M21.4,16.7c-0.5,0-1,0.1-1.4,0.3c-1.5,0.5-2.7,1.5-3.3,2.9s-0.8,3-0.3,4.4c0.8,2.5,3.3,4.1,5.9,3.9   c0.5,0,1-0.1,1.4-0.3c3-1,4.7-4.3,3.6-7.3C26.5,18.1,24.1,16.5,21.4,16.7z"></path></g><g><path d="M97.3,41.9l-4.9-1l-1.2-3.1l3.5-3.9c1.1-1.3,1.2-3.2,0-4.5l-4.5-5.3c-0.6-0.7-1.4-1.1-2.3-1.2   l-0.3,0c-0.6,0-1.3,0.2-1.8,0.6l-4.1,2.8l-3.1-1.4l-0.3-5.3c-0.1-1.7-1.5-3.1-3.2-3.2l-6.9-0.5l-0.3,0c-1.6,0-3,1.1-3.3,2.7l-1,5   l-3,1.1l-4-3.5c-0.6-0.5-1.2-0.8-2-0.9l-0.3,0c-0.8,0-1.6,0.3-2.2,0.8l-5.3,4.5c-1.3,1.1-1.6,3-0.6,4.4l2.8,4.3l-1.4,2.9l-5.3,0.3   c-1.7,0.1-3.1,1.5-3.2,3.2l-0.6,6.9c-0.1,1.7,1,3.3,2.7,3.6l5,1l1.1,3.2l-3.4,3.8c-1.2,1.3-1.2,3.2-0.1,4.5l4.5,5.2   c0.6,0.7,1.4,1.1,2.3,1.2l0.3,0c0.6,0,1.3-0.2,1.8-0.5l4.2-2.8l3,1.4l0.3,5.3c0.1,1.7,1.5,3.1,3.1,3.2l7,0.6l0.3,0   c1.6,0,3-1.1,3.3-2.7l0.9-4.9l3.3-1.1L82,72c0.6,0.5,1.3,0.8,2,0.9l0.3,0c0.8,0,1.6-0.3,2.2-0.8l5.2-4.5c1.3-1.1,1.6-3,0.7-4.4   L89.6,59l1.4-3.1l5.3-0.3c1.7-0.1,3.1-1.5,3.2-3.2l0.5-6.9C100.1,43.9,99,42.3,97.3,41.9z M85.2,59.1l3.7,5.8L84.2,69l-5.3-4.6   l-7.2,2.5l-1.5,6.8L64,73.1l-0.5-7.1l-6.6-3.4L51,66.3l-4.1-4.7l4.7-5.2l-2.5-7.3l-6.8-1.5l0.5-6.2l7.1-0.5l3.4-6.8l-3.6-5.8   l4.7-4.1l5.4,4.6l7.1-2.3l1.5-7l6.2,0.5l0.5,7l6.7,3.4l5.8-3.7l4.1,4.7L87.1,37l2.5,7.2l6.6,1.4l-0.5,6.2l-7,0.6L85.2,59.1z"></path><path d="M70.3,34.1c-0.3,0-0.7,0-1,0c-6.5,0-11.9,5.1-12.4,11.5c-0.5,6.9,4.6,12.9,11.5,13.5   c0.3,0,0.7,0,1,0c6.5,0,11.9-5.1,12.4-11.5c0.3-3.3-0.8-6.6-3-9.1C76.7,36,73.6,34.4,70.3,34.1z M68.6,55.3c-2.3-0.2-4.4-1.3-5.9-3   c-1.5-1.8-2.2-4-2.1-6.3c0.4-4.5,4.2-8,8.7-8c0.2,0,0.5,0,0.7,0c2.3,0.2,4.4,1.3,5.9,3c1.5,1.8,2.2,4,2.1,6.3c-0.4,4.5-4.2,8-8.7,8   C69.1,55.3,68.9,55.3,68.6,55.3z"></path></g>
+                              </svg>
+                            </use>
+                          </svg>
+                              <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >MECHANICAL TOOLSET</p>
+                           </div>
+                           </a>
+                          </div>
+                       </div>
+                     </div>
+                   </div>
+                  <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;">
+                          <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-mep">
+                          <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                            <use xlink:href="#icon-svg-acad-mep">&nbsp;
+                              <svg id="icon-svg-acad-mep" x="0px" y="0px" viewBox="0 0 76.3 77.8" style="enable-background:new 0 0 76.3 77.8;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><polyline style="fill:#666666;" points="69.7,7.6 64.3,7.6 64.3,47.7 69.7,47.7 "></polyline>
+                                <polygon style="fill:none;stroke:#666666;stroke-width:3.407;stroke-linejoin:bevel;stroke-miterlimit:10;" points="74.5,1.4 74.5,53.9 69.4,51.8 69.4,5.1 "></polygon><polyline style="fill:#666666;" points="48.5,71.2 48.5,65.7 7.8,65.7 7.8,71.2 "></polyline><polygon style="fill:none;stroke:#666666;stroke-width:3.4565;stroke-linejoin:bevel;stroke-miterlimit:10;" points="54.8,76.1 1.5,76.1 3.7,70.9 51,70.9 "></polygon><path style="fill:none;stroke:#666666;stroke-width:4.8813;stroke-linejoin:bevel;stroke-miterlimit:10;" d="M58.3,9.7v38.2c0,0-10.6,0.3-10.6,11.9H9c0,0-3-18.8,15.7-36.9S58.3,9.7,58.3,9.7z"></path><line style="fill:none;stroke:#666666;stroke-width:3.2542;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="48" y1="56.9" x2="9.2" y2="51.4"></line><line style="fill:none;stroke:#666666;stroke-width:3.2542;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="53.3" y1="49.4" x2="49.4" y2="9.7"></line><line style="fill:none;stroke:#666666;stroke-width:3.2542;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="51.7" y1="49.4" x2="35.4" y2="14.6"></line><line style="fill:none;stroke:#666666;stroke-width:3.2542;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="49" y1="53.9" x2="12.5" y2="40.1"></line><line style="fill:none;stroke:#666666;stroke-width:3.2542;stroke-linejoin:bevel;stroke-miterlimit:10;" x1="50.6" y1="51.4" x2="22.1" y2="25.6"></line>
+                              </svg>
+                            </use>
+                          </svg>
+                          <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >MEP TOOLSET</p>
+                           </div>
+                           </a>
+                        </div>
+                      </div>
+                    </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;">
+                          <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-map-3d">
+                          <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                              <use xlink:href="#icon-svg-acad-map3d">&nbsp;
+                                <svg id="icon-svg-acad-map3d" x="0px" y="0px" viewBox="0 0 100 76.1" style="enable-background:new 0 0 100 76.1;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><g><path d="M84.5,43.4h-24c4.9-11.1,9.5-26,4.4-35C62.1,3.5,56.8,1,49.3,1c-7.6,0-12.8,2.5-15.7,7.5   c-5.1,9-0.5,23.9,4.3,35H15.8L-0.9,76.1h100L84.5,43.4z M91,70.9H77.2l-2.3-9.7h11.8L91,70.9z M85.4,58.4H74.2L72,48.7h9.1   L85.4,58.4z M38.2,11.1c1.9-3.3,5.5-4.8,11.1-4.8c5.6,0,9.2,1.6,11,4.8c5.7,10-5.7,33.8-11.2,43C43.8,44.9,32.5,21.1,38.2,11.1z    M40.3,48.7c2.2,4.5,4.1,7.7,4.7,8.7l0.1,0.2c1.4,1.9,2.9,2.3,4,2.3c0,0,0.1,0,0.1,0c2.4-0.1,3.8-2,4.1-2.5c0.6-1,2.5-4.3,4.7-8.7   h11.2l2.3,9.7H53v2.7h19.1l2.3,9.7H53.3c-4.5-7.7-18.4-8.5-21.8-8.6L27,56l-9.9-3.7l1.9-3.6H40.3z M15.9,54.8l9.4,3.5l4.8,6.7h0.7   c0.2,0,13.9,0.1,19.2,5.9H7.7L15.9,54.8z"></path><path d="M56.6,18c0-3.7-3.3-6.8-7.4-6.8s-7.4,3-7.4,6.8c0,3.7,3.3,6.8,7.4,6.8S56.6,21.7,56.6,18z"></path></g></svg>
+                              </use>
+
+                            </svg>
+                            <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >MAP 3D TOOLSET</p>
+                           </div>
+                           </a>
+                          </div>
+                        </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6" style="border-right: 1px solid grey;">
+                          <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-raster-design">
+                           <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                            <use xlink:href="#icon-svg-acad-rasterdesign">&nbsp;
+                              <svg id="icon-svg-acad-rasterdesign" x="0px" y="0px" viewBox="0 0 64.9 71.7" style="enable-background:new 0 0 64.9 71.7;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><g><circle cx="45" cy="20.5" r="6.5"></circle><path d="M0.2,0v54.3v4.9v12.3h64.5V59.2v-4.9V0H0.2z M59.9,4.9v40.2L46.7,33l-10.5,9.4L17.3,23.1L5.1,34.5   V4.9H59.9z M5.1,41.1l12.1-11.2l23.9,24.4h-36V41.1z M59.9,66.7H5.1v-7.4h54.8V66.7z M47.9,54.3l-8.3-8.5l7.1-6.3l13.2,12.1v2.6   H47.9z"></path></g></svg>
+                            </use>
+                          </svg>
+                          <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >RASTER DESIGN TOOLSET</p>
+                           </div>
+                           </a>
+                        </div>
+                      </div>
+                        </div>
+                        <div class="col-lg-3 col-md-3 col-sm-6 col-xs-6">
+                          <div class="card" style="background-color: #F5F5F5;border:0px;">
+                          <div class="card-body" >
+                            <a href="https://www.autodesk.in/products/autocad/included-toolsets/autocad-plant-3d">
+                          <svg class="toolset-icon icon-small" style="height: 48px;width: 62px;fill: #666;">
+                            <use xlink:href="#icon-svg-acad-plant3d">&nbsp;
+                              <svg id="icon-svg-acad-plant3d" x="0px" y="0px" viewBox="0 0 76.3 77.8" style="enable-background:new 0 0 76.3 77.8;" xml:space="preserve" preserveAspectRatio="xMinYMin meet"><path d="M75.8,54.4c0-4.2-2.9-7.7-6.7-8.7V33.6h4.8l0.5-1.8c0.1-0.5,3.4-12-2.5-20.5  c-6-8.6-16.3-8.6-16.9-8.6l-1.7,0l-2,5H32.4c-0.7-4.3-4.4-7.6-9-7.6s-8.3,3.3-9,7.6H0.1V11h14.2v10.6H0.1v3.3h14.6  c1.1,3.8,4.6,6.6,8.7,6.6s7.6-2.8,8.7-6.6h12.3l-0.6,1.4l4.9,7.2h2.8v11.9c-4.2,0.8-7.4,4.5-7.4,8.9s3.2,8.1,7.4,8.9v14.4H55V63.5  h10.7v14.3h3.3V63.2C72.9,62.1,75.8,58.6,75.8,54.4z M27.5,22.4c0,2.3-1.8,4.1-4.1,4.1s-4.1-1.8-4.1-4.1V9.1c0-2.3,1.8-4.1,4.1-4.1  s4.1,1.8,4.1,4.1V22.4z M45.8,21.6H32.5V11H50L45.8,21.6z M49.5,25.7l7.1-17.9c2.6,0.4,7.9,1.7,11.1,6.3c3.4,4.8,2.8,11.3,2.2,14.4  H51.5L49.5,25.7z M65.7,33.6v11.8H55V33.6H65.7z M66.6,58.5H53.3c-2.3,0-4.1-1.8-4.1-4.1c0-2.3,1.8-4.1,4.1-4.1h13.3  c2.3,0,4.1,1.8,4.1,4.1C70.7,56.7,68.9,58.5,66.6,58.5z"></path></svg>
+                            </use>
+                          </svg>
+                          <div>
+                             <p style="font-size: 12px;color: #777777;margin-top: 6px;" >PLANT 3D TOOLSET</p>
+                           </div>
+                           </a>
+                        </div>
+                      </div>
+                    </div>
+                       </div>
+                    </div>
+                    
+                    </div>
+                  </div>
+                </div>
+            </div>
+            </div>
+            <div class="row" style="padding-bottom: 76px;padding-left: 20px;padding-right: 20px; ">
+              <div class="col-sm-12 col-md-6 col-lg-6" style="padding-right: 30px;padding-left: 0px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;">
+                      
+                        <div class="image">
+                          
+                            <a href="#" onclick="lightbox_open();"><img src="https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad/fy20/overview/images/autocad-mobile-app-video-thumb-554x330.jpg" style="max-width:100%;max-height:100%"> </a>
+                            <div style="margin-top: 16px">
+                              <p style="color: #666;font-size: 14px;">AutoCAD mobile app video (39 sec.)</p>
+                            </div>
+                          
+                        </div>
+                          
+                        <div class="image"> 
+                      
+                        <a href="#" onclick="lightbox_open1();"><img src="https://damassets.autodesk.net/content/dam/autodesk/www/products/autocad/fy20/overview/images/autocad-web-2020-overview-video-thumb-554x330.jpg" style="max-width:100%;max-height:100%"> </a>
+                        <div style="margin-top: 16px">
+                              <p style="color: #666;font-size: 14px;">AutoCAD mobile app video (39 sec.)</p>
+                            </div>
+                        </div>
+
+
+                      
+                    </div>
+                  </div>
+                </div>
+             </div>
+             <div class="col-sm-12 col-md-6 col-lg-6" style="padding-left: 30px;padding-right: : 0px;padding-left: 0px;">
+                <div class="card" style="border: 0px;padding: 0px; background-color:#F5F5F5; ">
+                  <div class="card-body" style="padding: 0px;">
+                    <div style="padding: 0px;">
+                         <h2 class="card-title" style="padding: 5 5 5 5;color: #444;">Work anywhere with included mobile and web apps</h2>
+                          <hr style="border: 2px solid rgb(221, 34, 34)" />
+                          <div class="hover_effect"><p style="margin-top: 16px;"><a href="https://www.autodesk.com/products/autocad-mobile/overview" target="_blank" style="text-decoration: none;
+    border-bottom: dashed 1px #444;color:#444; ">AutoCAD mobile app</a>&nbsp(US site)</p></div>
+                          
+                          <p>View, edit, annotate, and create drawings in the field and on the go from a mobile device.</p>
+                          <div><p style="margin-top: 16px;"><a href="https://www.autodesk.com/products/autocad-mobile/overview" target="_blank" style="text-decoration: none;
+    border-bottom: dashed 1px #444;color:#444; ">AutoCAD web app</a></div>
+                          
+                          <p>With no install required, simply log in to view, edit, annotate, and create drawings quickly in your local web browser.</p>
+                          
+                          
+                    </div>
+                    
+                    </div>
+                  </div>
+                </div>
+            </div>
+      </div>
+  </div>
+</body>
+</html>
